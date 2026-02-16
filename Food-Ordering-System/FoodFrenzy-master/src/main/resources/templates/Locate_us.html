@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>FoodFrenzy</title>
+	<link rel="icon" type="image/x-icon" href="./img/b.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="" th:href="@{/css/Navigation.css}" />
+	<link rel="stylesheet" href="" th:href="@{/css/Locate_us.css}" />
+	<style>
+		.icons{
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+	<nav th:replace="~{Navigation::navbar()}"></nav>
+	<center>
+		<h1 style="color: orangered; ">Our Location</h1>
+	</center>
+	<div class="location">
+
+
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="contact-icon fas fa-home"></i>
+                    <span>
+                        <h5>KSR College of Technology,KSR Educational Institutions,KSR Kalvi Nagar,Tiruchengode.</h5>
+                        <p>Tamil Nadu</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="contact-icon fas fa-phone"></i>
+                    <span>
+                        <h5>+91 74180 62694</h5>
+                        <p>Monday to Saturday, 10AM to 8PM</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="contact-icon fas fa-envelope"></i>
+                    <span>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="visit-btn red-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4 style="text-align: center;">About Us</h4>
+        <p style="text-align: center;">
+        ”Explore our wide range of products designed to enhance your life."
+        </p>
+        </div>
+    </section>
+</body>
+
+</html>
